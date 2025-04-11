@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "update-suppression-block:block/update-suppression-block"
+  }
+}

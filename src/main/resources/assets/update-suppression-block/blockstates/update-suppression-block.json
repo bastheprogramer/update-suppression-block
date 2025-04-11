@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "update-suppression-block:block/update-suppression-block"
+    }
+  }
+}

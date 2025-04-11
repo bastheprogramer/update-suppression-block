@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "update-suppression-block:block/update-suppression-block"
+  }
+}
