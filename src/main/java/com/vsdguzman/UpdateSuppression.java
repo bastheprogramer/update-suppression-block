@@ -13,6 +13,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.Identifier;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -57,6 +58,7 @@ public class UpdateSuppression implements ModInitializer {
 
     @Override
     public void onInitialize() {
+
         // Register the BlockItem so that the block can be held in an inventory.
         registerBlockItem("update-suppression-block", UpdateSuppressionBlock);
 
@@ -65,6 +67,7 @@ public class UpdateSuppression implements ModInitializer {
             entries.add(UpdateSuppressionBlock);
         });
 
+        UpdateSuppressionGamerule.init();
         LOGGER.info("Update Suppression mod has been initialized.");
     }
 }

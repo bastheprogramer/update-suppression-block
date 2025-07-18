@@ -3,13 +3,13 @@
 	"id": "update-suppression-block",
 	"version": "${version}",
 	"name": "update suppression block",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Update Suppression for nerds",
 	"authors": [
-		"Me!"
+		"BastheProgrammer"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/bastheprogramer/update-suppression-block",
+		"sources": "https://github.com/bastheprogramer/update-suppression-block"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/update-suppression-block/icon.png",
@@ -28,11 +28,8 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.16.12",
-		"minecraft": "~1.21.5",
+		"minecraft": "~1.21.6",
 		"java": ">=21",
 		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
 	}
 }
