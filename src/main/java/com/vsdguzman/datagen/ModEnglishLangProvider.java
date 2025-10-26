@@ -18,6 +18,8 @@ public class ModEnglishLangProvider extends FabricLanguageProvider {
     public void generateTranslations(RegistryWrapper.WrapperLookup registryLookup, TranslationBuilder translationBuilder) {
         translationBuilder.add(UpdateSuppression.UpdateSuppressionBlock, "Update Suppression Block");
         translationBuilder.add(UpdateSuppression.UpdateSuppressionBlock.asItem(), "Update Suppression Block");
-        translationBuilder.add(String.valueOf(UpdateSuppressionGamerule.UpdateSuppressionCrashFix), "Update Suppression Crash Fix");
+        translationBuilder.add(UpdateSuppressionGamerule.UpdateSuppressionCrashFix.getTranslationKey(), "Update Suppression Crash Fix");
+        translationBuilder.add(UpdateSuppressionGamerule.UpdateSuppressionCrashFix.getTranslationKey() + ".description", "Prevents the server from crashing due to update suppression(applies to only the update suppression block)");
+
     }
 }

@@ -19,6 +19,8 @@ public abstract class MinecraftServerMixin {
 	 * Wraps the original `tickWorlds` method to catch and handle `UpdateSuppressionError`.
 	 * This allows the mod to suppress world tick updates when the custom error is thrown,
 	 * preventing crashes and logging the suppression.
+	 * code by TISUnion(the @WrapOperation)
+	 * https://github.com/TISUnion
 	 */
 	@WrapOperation(
 			method = "tick", // NOT "tickWorlds"

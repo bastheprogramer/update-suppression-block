@@ -1,5 +1,7 @@
 {
-  "UpdateSuppressionCrashFix": "Update Suppression Crash Fix",
+  "UpdateSuppressionCrashFix.description": "Prevents the server from crashing due to update suppression(applies to only the update suppression block)",
   "block.update-suppression-block.update-suppression-block": "Update Suppression Block",
+  "gamerule.UpdateSuppressionCrashFix": "Update Suppression Crash Fix",
+  "gamerule.UpdateSuppressionCrashFix.description": "Prevents the server from crashing due to update suppression(applies to only the update suppression block), default: true",
   "item.update-suppression-block.update-suppression-block": "Update Suppression Block"
 }
