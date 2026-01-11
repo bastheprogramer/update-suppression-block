@@ -46,7 +46,7 @@ public abstract class MinecraftServerMixin {
 		} catch (Throwable t) {
 			// Check if the gamerule is enabled before attempting to suppress.
 			// This ensures suppression only occurs when intended.
-			boolean crashFixGameruleEnabled = minecraftServer.getGameRules().getBoolean(UpdateSuppressionGamerule.UpdateSuppressionCrashFix);
+			boolean crashFixGameruleEnabled = minecraftServer.getOverworld().getGameRules().getValue(UpdateSuppressionGamerule.UpdateSuppressionCrashFix);
 			boolean isOurSuppressionError = isSuppressionError(t);
 			UpdateSuppression.LOGGER.info(String.valueOf(crashFixGameruleEnabled), isOurSuppressionError);
 			if (crashFixGameruleEnabled && isOurSuppressionError) {
